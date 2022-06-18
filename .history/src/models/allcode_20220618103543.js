@@ -14,17 +14,15 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   };
-  User.init({
-    email: DataTypes.STRING,
-    password: DataTypes.STRING,
-    firstName: DataTypes.STRING,
-    lastName: DataTypes.STRING,
-    address: DataTypes.STRING,
-    gender: DataTypes.BOOLEAN,
-    roleid: DataTypes.STRING
+  Allcode.init({
+    key: DataTypes.STRING,
+    type: DataTypes.STRING,
+    value_en: DataTypes.STRING,
+    value_vi: DataTypes.STRING,
+    
   }, {
     sequelize,
-    modelName: 'User',
+    modelName: 'Allcode',
   });
-  return User;
+  return Allcode;
 };
