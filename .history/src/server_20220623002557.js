@@ -7,7 +7,7 @@ import connectDB from './config/connectDB';
 require('dotenv').config();
 
 let app = express();
-app.use(cors({ credentials: true, origin: true }));
+app.use(cors());
 
 //config app
 
